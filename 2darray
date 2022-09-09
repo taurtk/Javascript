@@ -1,0 +1,30 @@
+process.stdin.resume();
+process.stdin.setEncoding('utf8');
+// Your code he
+
+function twoDArrayExample() {
+ var rows = 10, columns = 10;
+ var arr = new Array(rows);
+ var count = 0;
+ for (var i = 0; i < rows; i++) {
+ arr[i] = new Array(columns);
+ for (var j = 0; j < columns; j++) {
+ arr[i][j] = count++;
+ }
+ }
+ print2DArray(arr, 4, 2);
+ console.log(arr)
+}
+function print2DArray(arr, row, col) {
+ for (var i = 0; i < row; i++) {
+//  console.info( arr[i] );
+ }
+ 
+}
+function main() {
+ twoDArrayExample();
+}
+
+main()
+
+
