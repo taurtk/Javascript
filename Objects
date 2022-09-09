@@ -1,0 +1,45 @@
+
+function Person(f,s)
+{
+    this.first =f;
+    this.second = s;
+    this.getName = getName;
+}
+
+function Person1(f,s)
+{
+    this.first = f;
+    this.second=s;
+    this.getName = function()
+    {
+        return this.first+''+this.second;
+    }
+}
+
+function Person2(f,s)
+{
+    this.first = f;
+    this.second= s;
+}
+
+Person2.prototype.getName =  function()
+{
+    return this.first +''+this.second
+}
+
+function getName()
+{
+    return this.first+ ''+this.second;
+}
+
+function main()
+{
+    var hp = new Person('Harry','Porter')
+    console.info(hp.getName())
+    var tk = new Person1('Taufique','Khan')
+    console.info(tk.getName())
+    var pk = new Person2('Prem','Prakash')
+    console.info(pk.getName())
+}
+
+main()
